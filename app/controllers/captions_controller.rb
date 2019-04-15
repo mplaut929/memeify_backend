@@ -14,6 +14,12 @@ class CaptionsController < ApplicationController
     render json: @caption
   end
 
+  def update
+    @caption = Caption.find(params[:id])
+    @caption.update(captions_params)
+    render json: @caption
+  end
+
 
   def destroy
     @caption = Caption.find(params[:id])
