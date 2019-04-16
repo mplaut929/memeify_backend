@@ -19,22 +19,22 @@ Meme.find_or_create_by(url: "https://i.imgflip.com/2cp1.jpg", title: "Aging Quic
 Meme.find_or_create_by(url: "https://i.imgflip.com/9vct.jpg", title: "Jack Sparrow Being Chased")
 
 10.times do
-  Caption.find_or_create_by(meme_id: rand(6...17), text: Faker::Hipster.sentence, likes: 0)
+  Caption.find_or_create_by(meme_id: rand(17...27), text: Faker::Hipster.sentence, likes: 0)
 end
 
 10.times do
-  Caption.find_or_create_by(meme_id: rand(6...17), text: Faker::Hacker.say_something_smart, likes: 0)
+  Caption.find_or_create_by(meme_id: rand(17...27), text: Faker::Hacker.say_something_smart, likes: 0)
 end
 
 10.times do
-  Caption.find_or_create_by(meme_id: rand(6...17), text: Faker::TvShows::Seinfeld.quote, likes: 0)
+  Caption.find_or_create_by(meme_id: rand(17...27), text: Faker::TvShows::Seinfeld.quote, likes: 0)
 end
 
 
 10.times do
-  Caption.find_or_create_by(meme_id: rand(6...17), text: Faker::TvShows::MichaelScott.quote, likes: 0)
+  Caption.find_or_create_by(meme_id: rand(17...27), text: Faker::TvShows::MichaelScott.quote, likes: 0)
 end
 
 10.times do
-  Caption.find_or_create_by(meme_id: rand(6...17), text: Faker::TvShows::GameOfThrones.quote, likes: 0)
+  Caption.find_or_create_by(meme_id: rand(17...27), text: Faker::TvShows::GameOfThrones.quote, likes: 0)
 end
