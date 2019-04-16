@@ -1,6 +1,6 @@
 class CaptionsController < ApplicationController
   def index
-    @captions = Caption.all
+    @captions = Caption.all.sort_by{|caption| caption.likes}.reverse
     render json: @captions
   end
 
