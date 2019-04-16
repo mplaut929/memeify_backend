@@ -1,3 +1,3 @@
 class Meme < ApplicationRecord
-  has_many :captions
+  has_many :captions, -> {order('likes DESC')}
 end
